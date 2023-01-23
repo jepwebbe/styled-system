@@ -9,6 +9,7 @@ import { Flex } from "./components/Flex";
 import { Text } from "./components/Text";
 import { Grid } from "./components/Grid";
 import { media } from "./theme/helpers";
+import { StyledButton } from "./styles/StyledButton";
 
 const GlobalStyle = createGlobalStyle`
   body {    
@@ -57,12 +58,15 @@ function App() {
           ]}
         >
           <Flex
-            justifyContent="center"
+            justifyContent="end"
             alignItems="center"
             bg="green"
             gridArea="header"
           >
-            <EnhancedText>Header</EnhancedText>
+            <EnhancedText>
+              <StyledButton variant="jeppeCustom">One</StyledButton>
+              <StyledButton variant="jeppeCustom">Two</StyledButton>
+            </EnhancedText>
           </Flex>
           <Flex
             justifyContent="center"

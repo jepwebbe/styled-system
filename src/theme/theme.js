@@ -32,6 +32,16 @@ export const theme = {
   width: [16, 32, 64, 128, 256],
   heights: [16, 32, 64, 128, 256],
   maxWidths: [16, 32, 64, 128, 256, 512, 768, 1024, 1536],
+  buttons: {
+    jeppeCustom: {
+      backgroundColor: '#4287f5',
+      color: "#f5425a",
+      '&:hover': {
+        backgroundColor: '#f5425a',
+        color: '#4287f5'
+      }
+    }
+  },
   colors: {
     black: "#000",
     "near-black": "#111",
